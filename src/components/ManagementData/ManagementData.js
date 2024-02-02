@@ -2,7 +2,7 @@
 
 async function fetchEmployeeData() {
   try {
-    const response = await fetch('http://localhost:8084/employeeControllerapi/employee');
+    const response = await fetch('https://smartinventory-backend-production.up.railway.app/employeeControllerapi/employee');
     console.info(response)
     const data = await response.json();
     console.info(data)
